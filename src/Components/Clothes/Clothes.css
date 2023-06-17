@@ -1,0 +1,103 @@
+.clothes-container{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.cloth{
+    margin: 25px;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-sectionn{
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.img-sectionn img{
+    width: 90%;
+    height: 90%;
+}
+
+.top{
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fav{
+    padding: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.bottom button{
+    padding: 0.5rem 2rem;
+    background-color: #454545;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.bottom button:hover{
+    background-color: #5c5b5b;
+
+}
+
+.text-section{
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.text-section h4{
+    margin: 3px;
+}
+.text-section p{
+    margin: 3px;
+}
+
+@media screen and (max-width: 767px){
+    .img-sectionn{
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .img-sectionn img{
+        width: 85%;
+        height: 85%;
+    }
+
+    .cloth{
+        width: 10rem;
+        margin: 20px 10px;
+    }
+    .fav{
+        font-size: 20px;
+    }
+
+    .clothes-container{
+        overflow-x: scroll;
+    }
+
+    .bottom button{
+        padding: 0.5rem 1.3rem;
+        margin-bottom: 10px;
+    }
+
+}

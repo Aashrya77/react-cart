@@ -1,0 +1,120 @@
+.main {
+  display: flex;
+  background-image: url("../../Images/Clothing-back.jpg");
+  background-size: cover;
+  flex-direction: column;
+  padding-bottom: 280px;
+  
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 175px;
+}
+
+.heading>:nth-child(1){
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 3px 3px 8px black;
+
+}
+.heading>:nth-child(2){
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 3px 3px 8px black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.button{
+    margin-top: 30px;
+}
+
+.button button{
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: none;
+    margin: auto;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button a{
+    text-decoration: none;
+}
+
+button:hover{
+    transition: 0.3s;
+    background-color: #454545;
+    color: white;
+}
+
+.soc-pay{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: x-large;
+    gap: 3rem;
+}
+
+.soc-pay a{
+    color: black;
+}
+
+.payment{
+    display: flex;
+    border-left: 2px solid gray;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: x-large;
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 767px){
+    .heading>:nth-child(1){
+        font-size: 30px;
+    }
+
+    .heading>:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .button{
+        margin-top: 12px;
+    }
+
+    .button button{
+        padding: 8px 18px;
+    }
+
+    .socials{
+        gap: 2rem;
+        font-size: larger;
+        padding: 0.8rem;
+    }
+
+    .payment{
+        font-size: larger;
+    }
+
+
+}
